@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { CategoryAddComponent } from './components/category-add/category-add.component';
-import { CategoryListComponent } from './components/category-list/category-list.component';
-import { CategoryUpdateComponent } from './components/category-update/category-update.component';
+import { CategoryAddComponent } from './components/category/category-add/category-add.component';
+import { CategoryListComponent } from './components/category/category-list/category-list.component';
+import { CategoryUpdateComponent } from './components/category/category-update/category-update.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { CategoryUpdateComponent } from './components/category-update/category-u
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
